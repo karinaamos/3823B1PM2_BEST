@@ -1,19 +1,25 @@
 #include <stdbool.h>
 
+char x;
+scanf("%c",&x);
 
 bool is_digit(char x) {
-    return true; // No implementation
+    if(isdigit(x))
+    return true; 
 }
 
 bool is_letter(char x) {
-    return true; // No implementation
+    int isletter(int x);
+    return true;
 }
 
 bool is_punctuation(char x) {
-    return true; // No implementation
+    int ispunctuation(int x);
+    return true; 
 }
 
 int get_ascii_code(char first, char second, char third) {
-    return 0; // No implementation
+
+    return 0; 
 }
 
