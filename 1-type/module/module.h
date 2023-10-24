@@ -1,3 +1,6 @@
 int get_module(int a, int b, int c) {
-    return 0; // Not implementation
+    if ((a>=c)||(b>=c))
+        return (a%c*b%c);
+    else 
+        return (a*b)%c;
 }
