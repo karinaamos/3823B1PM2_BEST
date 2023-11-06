@@ -1,11 +1,10 @@
 long long change(int a, int b, int c, int d){
-    scanf("%d %d %d %d", &a, &b, &c, &d);
-    int e;
-    int f;
-    int s;
-    e=c-a;
-    f=d-b;
-    s=100*e+f;
-    printf("%d", s);
-    return 0;
+   long long int f = c;
+    long long int s = a * 100 + b;
+    long long int k  = f * 100 + d;
+    long long int sd = k - s;
+    if (sd< 0)
+        return -1;
+    else 
+        return 100 * (sd / 100) + (sd % 100);
 }
