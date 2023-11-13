@@ -5,7 +5,6 @@ char robot_move(int xs[], int ys[], int num_points, double area_radius, int xt, 
         if (sqrt(pow(fabs(xs[i] - xt), 2) + pow(fabs(ys[i] - yt), 2)) <= area_radius)
             return 1;
         }
-    
     for (int i = 1; i < num_points; i++){
         for (int k = 1; k < i; k++){
             int raz1 = fabs(xs[i] - xs[i - k]);
