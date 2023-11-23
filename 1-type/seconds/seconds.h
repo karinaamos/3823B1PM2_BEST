@@ -1,3 +1,5 @@
+#include <math.h>
+
 int get_years(int seconds) {
     int x,y;
     x=1970;
