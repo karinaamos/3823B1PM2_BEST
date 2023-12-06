@@ -3,7 +3,7 @@
 #include <time.h>
 
 
-int* create_array(int *real_size, int number){
+int* array(int *real_size, int number){
     int* array = malloc(sizeof(int) * *real_size);
     for (int i = 0; i < *real_size; i++){
         array[i] = number;
