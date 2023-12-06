@@ -1,7 +1,7 @@
 #include <math.h>
 
 int nod(int first, int second){
-    double r;
+    int r;
     r = first % second;
     int nod1;
     if ((first==0)||(second==0)){
