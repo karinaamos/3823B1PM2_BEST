@@ -3,28 +3,28 @@
 #include <time.h>
 
 
-int* array(int *real_size, int number){
+int* array(int *real_size, int n){
     int* array = malloc(sizeof(int) * *real_size);
     for (int i = 0; i < *real_size; i++){
-        array[i] = number;
+        array[i] = n;
     }
     return array;
 
 }
 
 int* array_generator(int* real_size, int k, int m, int f){
-    int flag = 1, number = 0, difference = 0;
+    int x = 1, n = 0, d = 0;
     int* array;
-    while (flag == 1){
+    while (x == 1){
         for (int i = 10; i < k + 1; i++){
             if (k % i == 0){
-                flag = 0;
+                x = 0;
                 *real_size = i;
                 break;
             }
         }
-        number = k / *real_size;
-        array = create_array(real_size, number);
+        n = k / *real_size;
+        array = array(real_size, n);
         if (f % 2 == 0){
             array[0] -= f/2;
             array[1] += f/2;
