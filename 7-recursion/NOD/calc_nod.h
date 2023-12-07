@@ -3,7 +3,7 @@
 int nod(int first, int second){
     int r;
     r = first % second;
-    int nod1;
+    int nodd;
     if ((first==0)||(second==0)){
         return -1;
     }
@@ -11,7 +11,7 @@ int nod(int first, int second){
         return second;
     }
     else{
-        nod1 = nod(second, r);
-        return nod1;
+        nodd = nod(second, r);
+        return nodd;
     }
 }

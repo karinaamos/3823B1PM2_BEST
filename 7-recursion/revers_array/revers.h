@@ -7,9 +7,9 @@ void reverse(int* array, int size, int count){
     if (++count >= --size){
         return;
     }
-    int t = array[size];
+    int a = array[size];
     array[size] = array[count];
-    array[count] = t;
+    array[count] = a;
     reverse(array, size, count);
 }
 
