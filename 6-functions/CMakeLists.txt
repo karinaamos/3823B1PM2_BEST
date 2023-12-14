@@ -1,5 +1,4 @@
 add_executable(kramer kramer/test.c)
-add_executable(one_array one_array/test.c)
 add_executable(subarray subarray/test.c)
 add_executable(max_min max_min/test.c)
 add_executable(array_transform array_transform/test.c)
